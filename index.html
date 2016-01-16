@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/mycss.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +19,42 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Rezando o terço</h1>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rezando o Terço</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Início</a></li>
+            <li><a href="#about">Historia</a></li>
+            <li><a href="#contact">Como rezar</a></li>
+            <li><a href="#contact">Sobre</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="jumbotron">
+        <p>Olá, seja bem-vindo, que Deus lhe abençoe!</p>Hoje é sábado, portanto contemplamos os mistério gozosos, clique no botão iniciar logo abaixo para começar a rezar o terço.
+        <hr/>
+
+          <div class="center">
+            <img class="btnStart" src="img/btnStart.png"/><br/>
+            <button class="btn btn-danger" type="button">Iniciar</button>
+          </div>
+          <hr/>
+          <p>Porque rezar o terço?</p>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery-2.1.3.js"></script>
