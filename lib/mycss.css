@@ -1,6 +1,28 @@
+@font-face {
+	font-family: 'fontCurs';
+	src: url("../fonts/A Gentle Touch.ttf");
+}
 body {
 	margin-top: 75px;
 	background-color: black;
+	font-family: Serif;
+	font-size: 15px;
+	background-image: url("../img/ceu_estrelado.jpg");
+}
+.navbar, .navbar-brand {
+	font-family: 'fontCurs';
+	font-size: 25px !important;
+	font-weight: bold;
+}
+h3{
+	font-family: 'fontCurs';
+	font-size: 30px;
+	font-weight: bold;
+}
+h4{
+	font-family: 'fontCurs';
+	font-size: 25px;
+	font-weight: bold;
 }
 .center {
 	margin: auto;
@@ -9,10 +31,24 @@ body {
 .btnStart{
 	width: 200px;
 	margin: 10px;
+	font-family: 'fontCurs';
+}
+#rezar{
+	font-size: 25px;
+	font-weight: bold;
 }
 .btnMystery{
 	cursor: pointer;
 }
 .spanMystery2{
 	display: none;
+}
+#cruz{
+	width: 20px;
+}
+.btn{
+	border-radius: 100px;
+	font-family: 'fontCurs';
+	font-size: 20px;
+	font-weight: bold;
 }

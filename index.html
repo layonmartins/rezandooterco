@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>
-   <nav class="navbar navbar-inverse navbar-fixed-top">
+   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -44,7 +44,7 @@
 
     <div class="container">
         <div class="jumbotron">
-        <p>Olá, seja bem-vindo, que Deus lhe abençoe!</p>
+        <h3>Olá, seja bem-vindo, que Deus lhe abençoe!</h3>
         <span class="spanMystery inline"> Hoje é <b id="day">sábado</b>, portanto contemplamos os mistérios </span>
         <span class="spanMystery2 inline">Você escolheu contemplar os mistérios </span>
         <b id="mystery" class="btnMystery" title="Contemplar outros mistérios" data-toggle="popover" 
@@ -61,12 +61,55 @@
 
           <div class="center">
             <img class="btnStart" src="img/btnStart.png"/><br/>
-            <button class="btn btn-danger" type="button">Rezar o terço <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></button>
+            <button id="rezar" class="btn btn-lg btn-danger" type="button" data-toggle="modal" data-target="#mdlOferecimentos">Rezar o terço <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></button>
           </div>
           <hr/>
-          <p>Porque rezar o terço?</p>
+          <h4>Porque rezar o terço?</4>
         </div>
     </div>
+
+
+
+
+
+    <!-- My modals -->
+    <div id="mdlOferecimentos" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+          <h3 class="modal-title"><img id="terco" src="img/terco.png"/> Oferecimentos</h3>
+          </div>
+          <div class="modal-body">
+            <p><i>"Divino Jesus, nós vos oferecemos este terço que vamos rezar, contemplando os mistérios da nossa redenção. Concedei-nos, por intercessão de Maria, vossa Mãe Santíssima, a quem nos dirigimos, as virtudes que nos são necessárias para rezá-lo bem e a graça de ganhar as indulgências desta santa devoção."</i></p>
+
+            <p><small><b>*Coloque aqui suas intenções particulares</b></small></p>
+
+            <p><b><h4>Creio<img id="cruz" src="img/cruz.png"/></h4></b></p>
+
+            <p><b>Homenagem à Santíssima Trindade:</b><br/>
+              <ul>
+                <li>Um <i>"Pai nosso..."</i></li>
+                <li>Três <i>"Ave-marias"...</i></li>
+              </ul>
+            </p>
+
+            <p>
+              <b>Oração:</b><small> *Opcional</small><br/>
+              <i>"Suplicantes vos rogamos, Senhor Deus, que concedais a vossos servos gozar sempre saúde do corpo e da alma e que, pela intercessão gloriosa da bem-aventurada Virgem Maria, sejamos livres da presente tristeza e gozemos a eterna alegria, por Cristo nosso Senhor. Amém"</i>
+            </p>
+          </div>
+          <div class="modal-footer center">
+          <a class="btn btn-success" href="#" title="Contemplar mistérios">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery-2.1.3.js"></script>
