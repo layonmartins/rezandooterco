@@ -44,12 +44,24 @@
 
     <div class="container">
         <div class="jumbotron">
-        <p>Olá, seja bem-vindo, que Deus lhe abençoe!</p>Hoje é sábado, portanto contemplamos os mistério gozosos, clique no botão iniciar logo abaixo para começar a rezar o terço.
+        <p>Olá, seja bem-vindo, que Deus lhe abençoe!</p>
+        <span class="spanMystery inline"> Hoje é <b id="day">sábado</b>, portanto contemplamos os mistérios </span>
+        <span class="spanMystery2 inline">Você escolheu contemplar os mistérios </span>
+        <b id="mystery" class="btnMystery" title="Contemplar outros mistérios" data-toggle="popover" 
+        data-placement="bottom"
+        data-content="
+            <a class='btn btn-link' onclick='Popovers(1);'>Gozosos</a><br/> 
+            <a class='btn btn-link' onclick='Popovers(2);'>Dolorosos</a><br/> 
+            <a class='btn btn-link' onclick='Popovers(3);'>Gloriosos</a><br/> 
+            <a class='btn btn-link' onclick='Popovers(4);'>Luminosos</a><br/>
+            <a class='btn btn-link' onclick='Popovers(0);'>Mistério de hoje</a>">
+        gozosos</b>.
+
         <hr/>
 
           <div class="center">
             <img class="btnStart" src="img/btnStart.png"/><br/>
-            <button class="btn btn-danger" type="button">Iniciar</button>
+            <button class="btn btn-danger" type="button">Rezar o terço <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></button>
           </div>
           <hr/>
           <p>Porque rezar o terço?</p>
@@ -60,5 +72,6 @@
     <script src="lib/jquery-2.1.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/myjs.js"></script>
   </body>
 </html>

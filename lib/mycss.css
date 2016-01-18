@@ -10,3 +10,9 @@ body {
 	width: 200px;
 	margin: 10px;
 }
+.btnMystery{
+	cursor: pointer;
+}
+.spanMystery2{
+	display: none;
+}
