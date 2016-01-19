@@ -7,7 +7,8 @@ body {
 	background-color: black;
 	font-family: Serif;
 	font-size: 15px;
-	background-image: url("../img/ceu_estrelado.jpg");
+	background-image: url("../img/back1.jpg");
+	background-repeat: no-repeat;
 }
 .navbar, .navbar-brand {
 	font-family: 'fontCurs';
@@ -51,4 +52,29 @@ h4{
 	font-family: 'fontCurs';
 	font-size: 20px;
 	font-weight: bold;
+}
+.carousel img{
+	width: 100%;
+}
+.black .modal-content{
+	background-color: black;
+	color: white;
+}
+.black .modal-header{
+	background-color: #eee;
+	border-bottom: 1px solid #1C1C1C;
+	color: black;
+	padding: 10px;
+}
+.black .modal-footer{
+	border-top: 1px solid #1C1C1C;
+	padding-top: 3px;
+	margin-top: 2px;
+}
+.black .modal-body{
+	padding: 2px;
+}
+
+.church .modal-content{
+	background-image: url("../img/church.jpg");
 }
