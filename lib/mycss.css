@@ -24,7 +24,7 @@ body {
 }
 h2{
 	font-family: 'fontCurs';
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: bold;
 }
 h3{
@@ -95,10 +95,16 @@ h6{
 }
 .black .modal-body{
 	padding: 2px;
+	color: white;
 }
-
-.back .modal-content{
+.oferecimento .modal-content{
 	background-image: url("../img/back1.jpg");
+}
+.agradecimento .modal-content{
+	background-image: url("../img/back2.jpg");
+}
+.agradecimento .modal-footer img{
+	width: 20px;
 }
 #alertSpeed{
 	display: none;
@@ -126,4 +132,31 @@ h6{
 }
 .ajustes .body {
 	padding: 15px;
+}
+.back{
+	position: absolute;
+	left: 0;
+	color: #0F0F0F;
+}
+.carousel-caption{
+	text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+.balao{
+	background-color: white;
+	color: black;
+	border-radius: 30px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+.balao:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-right-color: white;
+  top: 50%;
+  right: 95%;
+  margin-top: -15px;
 }
