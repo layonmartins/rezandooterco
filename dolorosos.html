@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mistérios dolorosos</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/mycss.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar ao início</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        </div><!--/.nav-collapse -->
+        <span id='btnSettings' class="glyphicon glyphicon-cog right point" aria-hidden="true" title="Ajustes">
+      </div>
+    </nav>
+
+    <div class="ajustes center">
+      <div class="well"><h4>Ajustes></h4></div>
+      <div class="body">
+        <h5>Volume:</h5> <input type='range'><br/>
+        <h5>Velocidade Slides:</h5> <input id='inputSpeed' class='point' type='range' name='speed' min='1' max='3' >
+        </div>
+    </div>
+
+    <div class="container">
+        <div id='alertSpeed' class="alert alert-warning">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Atenção!</strong> Você alterou a velocidade de transição, clique  
+          <b id='updatePage' class="point">aqui</b> para atualizar a página.
+        </div>
+
+        <div class="jumbotron">
+        <h2>Mistérios dolorosos</h2>
+      
+        <hr/>
+          <div class="center">
+            <button id="rezar" class="btn btn-lg btn-warning" type="button" data-toggle="modal" data-target="#mdlOferecimentos"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Começar...</button>
+          </div>
+
+          <hr/>
+          <h4>Neste mistério contemplamos a dores de Jesus Cristo:</h4>
+          <ol>
+              <li> <i class="mist point" data-toggle="modal" data-target="#mdlDolorosos1">mistério doloroso contemplamos a agonia;</i></li>
+              <li> <i class="mist point" data-toggle="modal" data-target="#mdlDolorosos2">mistério doloroso contemplamos a flagelação;</i></li>
+              <li> <i class="mist point" data-toggle="modal" data-target="#mdlDolorosos3">mistério doloroso contemplamos a coroação;</i></li>
+              <li> <i class="mist point" data-toggle="modal" data-target="#mdlDolorosos4">mistério doloroso contemplamos a subida ao Calvário;</i></li>
+              <li> <i class="mist point" data-toggle="modal" data-target="#mdlDolorosos5">mistério doloroso contemplamos a crucifixão;</i></li>
+          </ol>
+    </div>
+<div class="footer center"> <h6>Rezando o terço :)</h6> </div>
+
+
+
+
+
+    <!-- My modals -->
+    <div id="mdlOferecimentos" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="oferecimento">
+        <div class="modal-content">
+         <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+          <h2 class="modal-title"><img id="terco" src="img/terco.png"/> Oferecimentos</h2>
+          </div>
+          <div class="modal-body">
+            <p><i>"Divino Jesus, nós vos oferecemos este terço que vamos rezar, contemplando os mistérios da nossa redenção. Concedei-nos, por intercessão de Maria, vossa Mãe Santíssima, a quem nos dirigimos, as virtudes que nos são necessárias para rezá-lo bem e a graça de ganhar as indulgências desta santa devoção."</i></p>
+
+            <p><small><b>*Coloque aqui suas intenções particulares</b></small></p>
+
+            <p><b><h4>Creio<img id="cruz" src="img/cruz.png"/></h4></b></p>
+
+            <p><b>Homenagem à Santíssima Trindade:</b><br/>
+              <ul>
+                <li>Um <i>"Pai nosso..."</i></li>
+                <li>Três <i>"Ave-marias"...</i></li>
+                <li><i>"Glória-ao-Pai"</i></li>
+              </ul>
+            </p>
+
+            <p>
+              <b>Oração:</b><small> *Opcional</small><br/>
+              <i>"Suplicantes vos rogamos, Senhor Deus, que concedais a vossos servos gozar sempre saúde do corpo e da alma e que, pela intercessão gloriosa da bem-aventurada Virgem Maria, sejamos livres da presente tristeza e gozemos a eterna alegria, por Cristo nosso Senhor. Amém"</i>
+            </p>
+          </div>
+          <div class="modal-footer center">
+          <a id="StartMystery" class="btn btn-default closeModals" href="#" title="Contemplar mistérios">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+     <div id="mdlDolorosos1" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+      <div class="black">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+            <h4 class="modal-title">No primeiro mistério doloroso contemplamos a agonia ..."</h4>
+          </div>
+          <div class="modal-body">
+              <div id="carouselDo1" class="carousel slide">
+                   <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/dolorosos/agonia/1.jpg"/>
+                        <div class="carousel-caption">
+                          Neste 1° mistério doloroso contemplamos a agonia...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/dolorosos/agonia/2.jpg"/>
+                        <div class="carousel-caption">
+                          ... de Cristo nosso Senhor...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/3.jpg"/>
+                        <div class="carousel-caption">
+                          ... quando suou sangue no horto ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/4.jpg"/>
+                        <div class="carousel-caption">
+                          ... Retirou-se Jesus a um lugar chamado Getsêmani...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/5.jpg"/>
+                        <div class="carousel-caption">
+                          ... Jesus disse-lhes: sentai-vos aqui, enquando vou ali orar ..."
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/6.jpg"/>
+                        <div class="carousel-caption">
+                          "... Minha alma está triste até a morte" ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/7.jpg"/>
+                        <div class="carousel-caption">
+                          ... "Meu pai se possível, afasta de mim este cálice"...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/8.jpg"/>
+                        <div class="carousel-caption">
+                          ... "Todavia não se faça o que eu quero, mas sim o que tu queres"...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/9.jpg"/>
+                        <div class="carousel-caption">
+                          "Jesus encontra os discipulos dormindo. Dormi agora e repousai!"
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/agonia/10.jpg"/>
+                        <div class="carousel-caption">
+                          "... Chegou a hora!" (Mateus 26,36-44).
+                        </div>
+                      </div>
+
+                    </div>
+          </div>
+          <div class="modal-footer center">
+          <a id="bdo1" class="btn btn-link back closeModals" href="#" title="Voltar ao mistério anterior"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+          <a id="do1" class="btn btn-success closeModals" href="#" title="Ir para o próximo mistério">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+      <div id="mdlDolorosos2" class="modal fade" tabindex="-1" role="dialog">
+       <div class="modal-dialog modal-lg">
+        <div class="black">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+            <h4 class="modal-title">No segundo mistério doloroso contemplamos a flagelação ..."</h4>
+          </div>
+          <div class="modal-body">
+              <div id="carouselDo2" class="carousel slide">
+                   <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/dolorosos/flagelacao/1.jpg"/>
+                        <div class="carousel-caption">
+                          Neste 2° mistério doloroso contemplamos a flagelação...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/dolorosos/flagelacao/2.jpg"/>
+                        <div class="carousel-caption">
+                          ... de Jesus Cristo atado à coluna...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/3.jpg"/>
+                        <div class="carousel-caption">
+                          ... Jesus foi levado a Pilatos...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/4.jpg"/>
+                        <div class="carousel-caption">
+                          ... disseram-lhes ser um malfeitor.
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/5.jpg"/>
+                        <div class="carousel-caption">
+                          ... Pilatos disse: "não acho nele crime algum"
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/6.jpg"/>
+                        <div class="carousel-caption">
+                          a pedido do povo, mandou flagelar Jesus...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/7.jpg"/>
+                        <div class="carousel-caption">
+                          ... os soldados vestiram Jesus com um manto velho...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/8.jpg"/>
+                        <div class="carousel-caption">
+                          ... aproximavam-se dele e diziam: "Salve, rei dos judeus"
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/9.jpg"/>
+                        <div class="carousel-caption">
+                          ... e davam-lhe bofetadas ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/flagelacao/10.jpg"/>
+                        <div class="carousel-caption">
+                          (São João 19,1-3).
+                        </div>
+                      </div>
+
+                    </div>
+          </div>
+          <div class="modal-footer center">
+          <a id="bdo2" class="btn btn-link back closeModals" href="#" title="Voltar ao mistério anterior"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+          <a id="do2" class="btn btn-success closeModals" href="#" title="Ir para o próximo mistério">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div id="mdlDolorosos3" class="modal fade" tabindex="-1" role="dialog">
+     <div class="modal-dialog modal-lg">
+      <div class="black">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+            <h4 class="modal-title">No terceiro mistério doloroso contemplamos a coroação ..."</h4>
+          </div>
+          <div class="modal-body">
+              <div id="carouselDo3" class="carousel slide">
+                   <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/dolorosos/coroacao/1.jpg"/>
+                        <div class="carousel-caption">
+                          Neste 3° mistério doloroso contemplamos a coroação...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/dolorosos/coroacao/2.jpg"/>
+                        <div class="carousel-caption">
+                          ... de espinhos do Nosso Senhor.
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/3.jpg"/>
+                        <div class="carousel-caption">
+                          ... vestiram Jesus de púrpura...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/4.jpg"/>
+                        <div class="carousel-caption">
+                          ... teceram uma coroa de espinhos...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/5.jpg"/>
+                        <div class="carousel-caption">
+                          ... e a colocaram na sua cabeça...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/6.jpg"/>
+                        <div class="carousel-caption">
+                          ... maltratavam...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/7.jpg"/>
+                        <div class="carousel-caption">
+                          ... agrediram...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/8.jpg"/>
+                        <div class="carousel-caption">
+                          ... zombavam"
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/9.jpg"/>
+                        <div class="carousel-caption">
+                          ...batiam com varas.
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/coroacao/10.jpg"/>
+                        <div class="carousel-caption">
+                          (São Marcos 15,16-20).
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <div class="modal-footer center">
+          <a id="bdo3" class="btn btn-link back closeModals" href="#" title="Voltar ao mistério anterior"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+          <a id="do3" class="btn btn-success closeModals" href="#" title="Ir para o próximo mistério">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div id="mdlDolorosos4" class="modal fade" tabindex="-1" role="dialog">
+     <div class="modal-dialog modal-lg">
+      <div class="black">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+            <h4 class="modal-title">No quarto mistério doloroso contemplamos a subida do Calvário ..."</h4>
+          </div>
+          <div class="modal-body">
+              <div id="carouselDo4" class="carousel slide">
+                   <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/dolorosos/subida/1.jpg"/>
+                        <div class="carousel-caption">
+                          Neste 4° mistério doloroso contemplamos Jesus Cristo...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/dolorosos/subida/2.jpg"/>
+                        <div class="carousel-caption">
+                          ... carregando a pesada cruz para o Calvário...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/3.jpg"/>
+                        <div class="carousel-caption">
+                          ... enquanto conduziram, ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/4.jpg"/>
+                        <div class="carousel-caption">
+                          ... detiveram um certo Simão de Cirene...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/5.jpg"/>
+                        <div class="carousel-caption">
+                          ... e impuseram-lho a cruz para que a...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/6.jpg"/>
+                        <div class="carousel-caption">
+                          ... carregasse atrás de Jesus...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/7.jpg"/>
+                        <div class="carousel-caption">
+                          ... Seguia-no, uma gandre multidão...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/8.jpg"/>
+                        <div class="carousel-caption">
+                          ... de povos...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/9.jpg"/>
+                        <div class="carousel-caption">
+                          ...e de mulheres...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/subida/10.jpg"/>
+                        <div class="carousel-caption">
+                          (São Lucas 23,26-31).
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <div class="modal-footer center">
+          <a id="bdo4" class="btn btn-link back closeModals" href="#" title="Voltar ao mistério anterior"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+          <a id="do4" class="btn btn-success closeModals" href="#" title="Ir para o próximo mistério">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+     <div id="mdlDolorosos5" class="modal fade" tabindex="-1" role="dialog">
+     <div class="modal-dialog modal-lg">
+      <div class="black">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+            <h4 class="modal-title">No quinto mistério doloroso contemplamos a crucifixão ..."</h4>
+          </div>
+          <div class="modal-body">
+              <div id="carouselDo5" class="carousel slide">
+                   <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/dolorosos/crucifixao/1.jpg"/>
+                        <div class="carousel-caption">
+                          Neste 5° mistério doloroso contemplamos a crucifixão e a morte...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/dolorosos/crucifixao/2.jpg"/>
+                        <div class="carousel-caption">
+                          ... de nosso Senhor Jesus Cristo...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/3.jpg"/>
+                        <div class="carousel-caption">
+                          ... no alto da cruz foi fixada uma placa ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/4.jpg"/>
+                        <div class="carousel-caption">
+                          ... que dizia: "Jesus de Nazaré, rei dos Judeus"...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/5.jpg"/>
+                        <div class="carousel-caption">
+                          ... junto a cruz estava, sua mãe, irmã de sua mãe, ...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/6.jpg"/>
+                        <div class="carousel-caption">
+                          ... Maria mulher de Cléofas e Maria Madalena...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/7.jpg"/>
+                        <div class="carousel-caption">
+                          ... ele disse: "tudo está consumado." e rendeu seu espírito...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/8.jpg"/>
+                        <div class="carousel-caption">
+                          ... um dos soldados...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/9.jpg"/>
+                        <div class="carousel-caption">
+                          ... abriu-lhe o lado com uma lança...
+                        </div>
+                      </div>
+                       <div class="item">
+                        <img src="img/dolorosos/crucifixao/10.jpg"/>
+                        <div class="carousel-caption">
+                          (São João 19,17-37).
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <div class="modal-footer center">
+          <a id="bdo5" class="btn btn-link back closeModals" href="#" title="Voltar ao mistério anterior"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Voltar</a>
+          <a id="do5" class="btn btn-success closeModals" href="#" title="Agradecimentos">Próximo <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    <div id="mdlAgradecimentos" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="agradecimento">
+        <div class="modal-content">
+         <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+          <h2 class="modal-title"><img id="terco" src="img/terco.png"/> Agradecimentos</h2>
+          </div>
+          <div class="modal-body">
+            <p><i>"Infinitas graças vos damos, soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liverais. Dignai-vos, agora e para sempre, tomar-nos debaixo de vosso podereso amparo e, para mais vos obrigar, vos saudamos com uma salve-rainha:"</i></p>
+            <p><b>Salve rainha:</b></p>
+            <p>
+              <i>"Salve, Rainha, Mãe de misericórdia, vida, doçura, esperança nossa, salve! A vós bradamos, os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce sempre Virgem Maria."</i>
+              <br/>-Rogai por nós, santa Mãe de Deus.
+              <br/>-Para que sejamos dignos das promessas de Cristo.
+            </p>
+
+            <p><b>Sinal da Cruz:</b><br/>
+                Estivemos e continuaremos unidos em nome do Pai, do Filho e do Espírito Santo.
+            </p>
+          </div>
+          <div class="modal-footer center">
+          <a id="amen" class="btn btn-default startSlide closeModals" href="#" title="Você terminou o terço">Amém <img src="img/sant.png"/></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="mdlParabens" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="black">
+        <div class="modal-content">
+         <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+          </span></button>
+          <h2 class="modal-title"><img id="terco" src="img/hand.png"/>Paaaaaaaaaaaarabééééénnnnnnsssssss!!!!!!!!!!!</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-5"><img src="img/angel.png"/></div>
+                <div class="col-md-6">
+                <div class="balao">
+                  <h3>Parabéns você conseguiu rezar o terço hoje!</h3>
+                  <h4>Espero você aqui amanhã para rezarmos novamente</h4>
+                  <h5>Tchau...</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer center">
+          <a class="btn btn-primary startSlide closeModals" href="#" title="Foi bom te ver aqui">Tchau </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery-2.1.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/myjs.js"></script>
+  </body>
+</html>

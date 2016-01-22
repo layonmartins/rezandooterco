@@ -63,6 +63,9 @@ h6{
 .point{
 	cursor: pointer;
 }
+.mist:hover{
+	text-decoration: underline;
+}
 .spanMystery2{
 	display: none;
 }
@@ -101,7 +104,7 @@ h6{
 	background-image: url("../img/back1.jpg");
 }
 .agradecimento .modal-content{
-	background-image: url("../img/back2.jpg");
+	background-image: url("../img/back1.jpg");
 }
 .agradecimento .modal-footer img{
 	width: 20px;
