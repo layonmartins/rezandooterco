@@ -160,3 +160,11 @@ h6{
   right: 95%;
   margin-top: -15px;
 }
+.comoRezar{
+	width: 80%;
+	max-width: 400px;
+}
+.footer{
+	color: white;
+	padding: 20px;
+}
